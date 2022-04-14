@@ -1,0 +1,17 @@
+[
+    {
+      "name": "Железный Ситин",
+      "picture": "/static/img/member1.jpg",
+      "profession": ["геодезист" , "строитель"]
+    },
+    {
+      "name": "Деннис Нильсен",
+      "picture": "static/img/member2.jpeg",
+      "profession": ["сериный убийца", "гангстер"]
+    },
+    {
+      "name": "Саске Учиха",
+      "picture": "static/img/member3.jpg",
+      "profession": ["ниндзя", "эмигрант", "чидорист"]
+    }
+]

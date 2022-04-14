@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for member in members %}
+        {% if member == members[k] %}
+            <h2 align="center">{{member["name"]}}</h2>
+            <p align="center"><a href="lol.html"><img src={{member["picture"]}}></a></p>
+            <div align="center">{{ haha }}</div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
