@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Результаты отбора</h1>
+    <h2>претендента на участие в миссии {{ name }}:</h2>
+    <font  style="background-color: lightblue" size="9">
+        Поздравляем! Ваш рейтинг после {{ level }} этапа отбора
+    </font>
+    <font size="8"><br>составляет {{ rating }}</font>
+    <font  style="background-color: tomato" size="10"><br>Желаем удачи!</font>
+{% endblock %}
