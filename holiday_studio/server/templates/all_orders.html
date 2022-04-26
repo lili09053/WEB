@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+ <h2 align="center">Таблица заказов</h2>
+    <table border="2">
+        <tr>
+            <td style="font-size: 30px;" bgcolor="SeaGreen" width="200px">Цена</td>
+            <td style="font-size: 30px;" bgcolor="SeaGreen" width="350px">Название</td>
+            <td style="font-size: 30px;" bgcolor="SeaGreen" width="750px">Описание</td>
+        </tr>
+        {% for item in my_orders %}
+            <tr>
+                <td>{{item["price"]}}</td>
+                <td>{{item["title"]}}</td>
+                <td>{{item["describtion"]}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

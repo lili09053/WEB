@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div>
+    {% if current_user.is_authenticated %}
+        <a class="btn btn-primary" href="/create_client">Создать клиента</a>
+        <a class="btn btn-primary" href="/create_order">Создать заказ</a><br><br>
+        <a class="btn btn-primary" href="/all_clients">Все клиенты</a>
+        <a class="btn btn-primary" href="/all_orders">Все заказы</a><br><br>
+        <a class="btn btn-primary" href="/put_client">Изменить клиента</a>
+        <a class="btn btn-primary" href="/put_order">Изменить заказ</a><br><br>
+        <a class="btn btn-primary" href="/delete_client">Удалить клиента</a>
+        <a class="btn btn-primary" href="/delete_order">Удалить заказ</a>
+    {% else %}
+        <p class="font-weight-bold">Вы не авторизованы</p>
+    {% endif %}
+</div>
+{% endblock %}
